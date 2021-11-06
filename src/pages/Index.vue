@@ -45,6 +45,12 @@
             предпринимателей-получателей
           </p>
         </div>
+        <div class="cil-12 q-md-5">
+          КОНОПКА
+        </div>
+        <div class="col-12">
+
+        </div>
       </div>
     </div>
   </div>
@@ -77,11 +83,13 @@ export default defineComponent({
       .then(response => {
         this.alleads = response.data
       })
+      .catch(error => console.log('Error', error.message))
     await this.$axios
       .get('https://mec.standsystematic.ru/api/budget/alleads/signed')
       .then(response => {
         this.alleadssigned = response.data
       })
+      .catch(error => console.log('Error', error.message))
     await this.$axios
       .get('https://mec.standsystematic.ru/api/budget/alleads/given')
       .then(response => {
