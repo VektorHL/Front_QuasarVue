@@ -60,9 +60,44 @@ p.title {
     mix-blend-mode: normal;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+p.chart_title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #878787;
+    mix-blend-mode: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.headd {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    color: #333;
+}
+
+p.summ, p.total {
+    color: #ff4261;
+    mix-blend-mode: normal;
+}
+
+p.summ {
+    padding-top: 20px;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+p.total.line {
+    border-bottom: 1px solid #c6c6c6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p.total {
+    line-height: 36px;
+    font-size: 36px;
 }
 
 p.subtitle {
@@ -80,4 +115,15 @@ p.subtitle {
 .column, .flex, .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+
+div.line {
+    border-right: 1px solid #c6c6c6;
+    padding-left: 15px;
+}
+
+.disFlex {
+    display: flex;
 }

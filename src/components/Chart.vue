@@ -1,7 +1,5 @@
 <template>
 
-    <div class="row section q-mt-lg">
-      <div class="col-12 col-md-4 col-lg-3 line">
         <div class="col q-mt-lg">
           <p class="headd">Одобрено заявок</p>
           <p class="summ">{{alleads.totalcount}}</p>
@@ -17,30 +15,13 @@
           <p class="summ">{{alleadsgiven.totalcount}}</p>
           <p class="total">{{alleadsgiven.totalsum}} млн</p>
         </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-8">
-      <div class="row ">
-        <div class="col-12 col-md-6 q-ml-lg">
-          <p class="chart_title">
-            Объем выданных средств Департаментом
-            <br>
-            по каждой субсидии и количество
-            <br>
-            предпринимателей-получателей
-          </p>
-        </div>
-      </div>
-    </div>
 
 </template>
 
 <script>
-// import Chart from 'components/Chart'
 
 export default {
-  name: 'SumFunds',
-  // components: { Chart },
+  name: 'Chart',
   data () {
     return {
       alleads: [],
