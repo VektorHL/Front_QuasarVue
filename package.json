@@ -1,9 +1,9 @@
 {
-  "name": "quasar_project",
+  "name": "test_pr",
   "version": "0.0.1",
-  "description": "projet App",
-  "productName": "Front with quasar and VUE",
-  "author": "VektorHL",
+  "description": "A Quasar Framework app",
+  "productName": "test_pr",
+  "author": "VektorHL <vektorhalflife.vektorhl@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
@@ -11,18 +11,18 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "axios": "^0.24.0",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
-    "vue-i18n": "^9.0.0",
-    "vuex": "^4.0.1",
-    "yarn": "^1.22.17"
+    "quasar": "^2.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
     "eslint": "^7.14.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0"
   },

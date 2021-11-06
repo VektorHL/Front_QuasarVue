@@ -1,11 +1,83 @@
-.bg-colorPink {
+.bg-brandpink {
     background: #FF4261;
 }
 
-.colorPink {
+.brandpink {
     color:#FF4261;
 }
 
-.colorGrey {
+.brandgrey {
     color: #313131;
+}
+
+.colorblack {
+    color: rgb(0, 0, 0);
+}
+
+.BigFont {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    /* vertical-align: center; */
+  }
+
+.HeaderFont {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    font-style: normal;
+    align-items: left;
+    text-align: left;
+    /* vertical-align: center; */
+}
+
+.MidFont {
+    font-size: 26px;
+    margin: 16px 0 16px;
+    padding:20px 0px 0px 15px;
+    font-weight: 700;
+    // display: flex;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+p.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #313131;
+    mix-blend-mode: normal;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    color: #ff4261;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.column, .flex, .row {
+    display: flex;
+    flex-wrap: wrap;
 }

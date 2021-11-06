@@ -1,6 +1,6 @@
-# Front with quasar and VUE (quasar_project)
+# test_pr (test_pr)
 
-projet App
+A Quasar Framework app
 
 ## Install the dependencies
 ```bash
