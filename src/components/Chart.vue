@@ -1,5 +1,7 @@
 <template>
-
+  <q-page>
+    <div class="row section q-mt-lg">
+      <div class="col-12 col-md-4 col-lg-3 line">
         <div class="col q-mt-lg">
           <p class="headd">Одобрено заявок</p>
           <p class="summ">{{alleads.totalcount}}</p>
@@ -15,7 +17,10 @@
           <p class="summ">{{alleadsgiven.totalcount}}</p>
           <p class="total">{{alleadsgiven.totalsum}} млн</p>
         </div>
+      </div>
+    </div>
 
+  </q-page>
 </template>
 
 <script>
