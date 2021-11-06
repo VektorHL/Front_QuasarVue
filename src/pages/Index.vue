@@ -33,10 +33,10 @@
           <p class="summ">{{alleadsgiven.totalcount}}</p>
           <p class="total">{{alleadsgiven.totalsum}} млн</p>
       </div>
-      </div>
-        <div class="col-12 col-md-8">
+    </div>
+    <div class="col-12 col-md-8">
       <div class="row ">
-        <div class="col-12 col-md-6 q-ml-lg">
+        <div class="col-12 col-md-6 q-ml-lg"><!--Объем выданных средств-->
           <p class="chart_title">
             Объем выданных средств Департаментом
             <br>
@@ -45,10 +45,10 @@
             предпринимателей-получателей
           </p>
         </div>
-        <div class="cil-12 q-md-5">
+        <div class="cil-12 q-md-5"><!--Кнопка-->
           КОНОПКА
         </div>
-        <div class="col-12">
+        <div class="col-12"><!--Диаграмма-->
 
         </div>
       </div>
