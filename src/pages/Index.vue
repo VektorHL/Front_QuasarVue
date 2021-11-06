@@ -8,12 +8,12 @@
     </div>
   </div>
   <div class="row section q-mt-lg q-mb-xl">
-    <div class="col-12 subtitle ">
+    <div class="col-auto subtitle ">
         <p class="subtitle">Текущий объем средств к выдаче</p>
     </div>
-    <!-- <div class="col">
+    <div class="col">
       <q-separator class="q-ml-sm q-mt-md bg-grey" />
-    </div> -->
+    </div>
     </div>
   <!-- <sum-funds /> -->
 
