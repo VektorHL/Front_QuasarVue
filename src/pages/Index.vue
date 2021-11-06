@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <div class="row section q-mt-lg">
+  <div class="row section q-mt-lg"><!--Данные к "Текущий объем средств к выдаче"-->
     <div class="col-12 col-md-4 col-lg-3 line">
       <div class="col q-mt-lg">
           <p class="headd">Одобрено заявок</p>
