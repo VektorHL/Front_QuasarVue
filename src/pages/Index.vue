@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <div class="row section q-mt-lg"><!-- Потенциальный объем средств к выдаче. Разделитель -->
+  <div class="row section q-mt-xl"><!-- Потенциальный объем средств к выдаче. Разделитель -->
     <div class="col-auto subtitle ">
       <p class="subtitle">Потенциальный объем средств к выдаче</p>
     </div>
@@ -64,26 +64,51 @@
     </div>
   </div>
 
+  <div class="row section q-mt-lg"><!--Данные к "Потенциальный объем средств к выдаче"-->
+    <div class="col-12 col-md-4 col-lg-3 q-mr-lg line"><!--Основные цифры-->
+      <div class="col q-mt-lg"> <!--Заявки в Департаменте. Данные-->
+          <p class="headd">Заявки в Департаменте</p>
+          <p class="summ">{{specialist.totalcount}}</p>
+          <p class="total">{{specialist.totalsum}} млн</p>
+      </div>
+      <div class="col q-mt-xl documents"> <!--Готовят документы. Данные-->
+          <p class="headd">Готовят документы</p>
+          <p class="summ">{{docpreparedtotal.totalcount}}</p>
+          <p class="total">предпринимателей</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-7"><!--Таблицы-->
+      <div class="col q-mt-lg"><!--Таблица 1-->
+        <budget-total />
+      </div>
+      <div class="col q-mt-lg"><!--Таблица 2-->
+        <doc-prepared />
+      </div>
+    </div>
+  </div>
   <!-- <sum-funds /> -->
 
 </div>
 </template>
 
 <script>
+// import { api } from 'boot/axios'
+// import { colors } from 'quasar'
 import { defineComponent } from 'vue'
-// import SumFunds from 'components/SumFunds'
-// import Chart from 'components/Chart'
-// import Chart from 'src/components/Chart.vue'
-// import SumFunds from 'src/components/SumFunds.vue'
+import budgetTotal from './BudgetTotal.vue'
+import docPrepared from './DocPrepared.vue'
 
 export default defineComponent({
-  // components: { SumFunds },
+  components: { budgetTotal, docPrepared },
   name: 'PageIndex',
   data () {
     return {
       alleads: [],
       alleadssigned: [],
-      alleadsgiven: []
+      alleadsgiven: [],
+
+      specialist: [],
+      docpreparedtotal: []
     }
   },
   async mounted () {
@@ -105,6 +130,30 @@ export default defineComponent({
         this.alleadsgiven = response.data
       })
       .catch(error => console.log('Error', error.message))
+
+    await this.$axios
+      .get('https://mec.standsystematic.ru/api/budget/specialist')
+      .then(response => {
+        this.specialist = response.data
+      })
+      .catch(error => console.log('Error', error.message))
+    await this.$axios
+      .get('https://mec.standsystematic.ru/api/leads/docprepared/total')
+      .then(response => {
+        this.docpreparedtotal = response.data
+      })
+      .catch(error => console.log('Error', error.message))
   }
 })
 </script>
+
+<style lang="sass">
+  td:first-child
+    /* bg color is important for td; just specify one */
+    color: #ff4261 !important
+
+  .q-table__top,
+  thead tr:first-child th
+    /* bg color is important for th; just specify one */
+    background-color: #ff4261
+</style>

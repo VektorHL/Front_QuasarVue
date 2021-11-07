@@ -124,6 +124,34 @@ div.line {
     padding-left: 15px;
 }
 
+div.documents {
+    margin-top: 125px!important;
+}
+
 .disFlex {
     display: flex;
+}
+
+.scroll, .scroll-x, .scroll-y {
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+}
+
+.q-table.thead, .q-table.tr {
+    border-color: rgba(0,0,0,0.12);
+}
+
+.q-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.head {
+    background-color: #ff4261!important;
+    position: sticky;
+    z-index: 2;
+    color: #fff;
+    font-size: 14px!important;
 }
