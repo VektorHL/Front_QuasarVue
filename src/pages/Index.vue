@@ -55,6 +55,15 @@
     </div>
   </div>
 
+  <div class="row section q-mt-lg"><!-- Потенциальный объем средств к выдаче. Разделитель -->
+    <div class="col-auto subtitle ">
+      <p class="subtitle">Потенциальный объем средств к выдаче</p>
+    </div>
+    <div class="col">
+      <q-separator class="q-ml-sm q-mt-md bg-grey" />
+    </div>
+  </div>
+
   <!-- <sum-funds /> -->
 
 </div>
