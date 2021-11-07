@@ -161,8 +161,30 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 q-mt-lg q-px-lg">
-      <div class="row disFlex"></div>
+    <div class="col-12 col-md-6 q-mt-lg q-px-lg bg-LPink">
+      <div class="row disFlex">
+        <div class="col-12 q-mt-lg">
+          <p class="indiText">
+            Добавление в реестры и официальный перечень площадок субсидий
+          </p>
+        </div>
+        <div class="col-6 q-mt-lg">
+          <p class="indiPinkText">{{ reestrSum.mik_participants }}</p>
+          <p class="callName">Участники МИК</p>
+        </div>
+        <div class="col-6 q-mt-lg">
+          <p class="indiPinkText">{{ reestrSum.reestr_soc }}</p>
+          <p class="callName">Заявки на вступление в реестр соц.предприятий</p>
+        </div>
+        <div class="col-6 q-mt-lg">
+          <p class="indiPinkText">{{ reestrSum.list_ploshadki }}</p>
+          <p class="callName">Заявки на добавление в список площадок</p>
+        </div>
+        <div class="col-6 q-mt-lg">
+          <p class="indiPinkText">{{ reestrSum.req_approved }}</p>
+          <p class="callName">Одобрено заявок</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -198,7 +220,9 @@ export default defineComponent({
       docpreparedtotal: [],
 
       callsPerDay: [],
-      totalCalls: []
+      totalCalls: [],
+
+      reestrSum: []
     }
   },
   async mounted () {
@@ -246,6 +270,13 @@ export default defineComponent({
         this.totalCalls = response.data
       })
       .catch(error => console.log('Error', error.message))
+
+    await this.$axios
+      .get('https://mec.standsystematic.ru/api/leads/mik/reestr/sum')
+      .then(response => {
+        this.reestrSum = response.data
+      })
+      .catch(error => console.log('Error', error.message))
   },
 
   methods: {
@@ -266,12 +297,11 @@ export default defineComponent({
 
 <style lang="sass">
   td:first-child
-    /* bg color is important for td; just specify one */
+    /* https://mec.standsystematic.ru/api/leads/mik/reestr/sum */
     color: #ff4261 !important
 
   .q-table__top,
   thead tr:first-child th
-    /* bg color is important for th; just specify one */
     background-color: #ff4261
 
   .q-separator

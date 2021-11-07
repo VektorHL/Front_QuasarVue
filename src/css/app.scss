@@ -2,6 +2,10 @@
     background: #FF4261;
 }
 
+.bg-LPink {
+    background: #ffecef;
+}
+
 .brandpink {
     color:#FF4261;
 }
@@ -130,6 +134,22 @@ p.subtitle {
     flex-wrap: wrap;
 }
 
+.indiText{
+    color: #313131;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.indiPinkText {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ff4261;
+}
+
+.indiText, .indiPinkText {
+    font-weight: 700;
+    mix-blend-mode: normal;
+}
 
 
 div.line {

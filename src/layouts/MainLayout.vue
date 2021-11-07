@@ -40,7 +40,7 @@
             class="q-mb-md q-ml-xl"
             style="max-width: 100%;">
         </div>
-        <div class="col-10 column items-center">
+        <div class="col-10 column items-center q-mt-md">
           <p style="color: white;w">
             2021
           </p>
