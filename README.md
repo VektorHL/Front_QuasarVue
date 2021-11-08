@@ -1,10 +1,13 @@
-# Quasar App (quasar-test)
+# Quasar App
 
 A Quasar Framework app
 
 ## Install the dependencies
 ```bash
 yarn
+======
+npm install yarn
+P.s. у меня просто yarn не работает
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
