@@ -4,7 +4,11 @@ A Quasar Framework app
 
 ## Install the dependencies
 ```bash
+yarn
+or
 npm install yarn
+
+P.s. у меня просто yarn не сработал
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
