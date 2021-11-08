@@ -1,4 +1,4 @@
-# test_pr (test_pr)
+# Quasar App (quasar-test)
 
 A Quasar Framework app
 
@@ -12,10 +12,6 @@ yarn
 quasar dev
 ```
 
-### Lint the files
-```bash
-yarn run lint
-```
 
 ### Build the app for production
 ```bash
